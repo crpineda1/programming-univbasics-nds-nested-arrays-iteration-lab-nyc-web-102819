@@ -10,7 +10,7 @@ def join_ingredients(src)
   row = 0
   newArray = []
   while row < src.count do
-    newArray[row] << "I love ${src[row][0]} and ${src[row][1]} on my pizza"
+    newArray[row] = "I love ${src[row][0]} and ${src[row][1]} on my pizza"
     row += 1
   end
 puts newArray
