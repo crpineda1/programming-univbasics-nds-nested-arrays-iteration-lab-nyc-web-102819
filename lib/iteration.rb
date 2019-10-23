@@ -30,6 +30,7 @@ def find_greater_pair(src)
     else
       newArray[row] = src[row][1]
       row += 1
+    end
   end
   p newArray
 end
