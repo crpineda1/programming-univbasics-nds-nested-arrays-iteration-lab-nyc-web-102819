@@ -26,8 +26,10 @@ def find_greater_pair(src)
   while row < src.count do
     if src[row][0] > src[row][1]
       newArray[row] = src[row][0]
+      row += 1
     else
       newArray[row] = src[row][1]
+      row += 1
   end
   p newArray
 end
