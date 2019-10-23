@@ -48,11 +48,13 @@ def total_even_pairs(src)
   totalPairs = 0
   while row < src.count do
     element = 0
-    if src[row][element]%2 == 0
-      totalPairs += src[row][element]
-      element += 1
-    else
-      element += 1
+    while element<src[row].count do
+      if src[row][element]%2 == 0
+        totalPairs += src[row][element]
+        element += 1
+      else
+        element += 1
+      end
     end
     row += 1
   end
